@@ -1,0 +1,99 @@
+body {
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 70px;
+  background-color: aquamarine;
+  padding-inline: 10vw;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.highscore {
+  color: black;
+  font-weight: 600;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.level {
+  color: black;
+  margin-bottom: 90px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: transform 0.5 linear;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.genius {
+  display: grid;
+  grid-template-areas: " green red "
+  " yellow blue ";
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  border-radius: 100%;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 768px){
+  .genius {
+    height: 500px;
+    width: 500px;
+  };
+}
+
+.blue{
+  grid-area: blue;
+  background-color: blue;
+  border-radius: 0 0 100% 0;
+}
+.red{
+  grid-area: red;
+  background-color: red;
+  border-radius: 0 100% 0 0;
+}
+.yellow{
+  grid-area: yellow;
+  background-color: yellow;
+  border-radius: 0 0 0 100%;
+}
+.green{
+  grid-area: green;
+  background-color: green;
+  border-radius: 100% 0 0 0;
+}
+
+.light {
+  opacity: 0.4;
+}
